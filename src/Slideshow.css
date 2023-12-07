@@ -1,0 +1,33 @@
+/* Slideshow.css */
+
+.slideshow-container {
+    position: relative;
+    max-width: 20%;
+    margin: auto;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    font-size: 1.5em;
+    padding: 1em;
+    cursor: pointer;
+    color:#ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+  
+  .prev-button {
+    left: 0;
+  }
+  
+  .next-button {
+    right: 0;
+  }
+  
