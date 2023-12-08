@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`fixed w-full h-[80px] flex justify-between items-center px-4 ${darkMode ? 'bg-gray-800 text-white' : 'bg-[#0a192f] text-gray-300'}`}>
+    <div className={`fixed w-full h-[80px] flex justify-between items-center px-4 ${darkMode ? 'bg-gray-800 text-white' : 'bg-[#0a192f] text-gray-300'}`} style={{ zIndex: 1000 }}>
       <div>
         <img src={Logo} alt='Logo Image' style={{ width: '200px' }} />
       </div>
@@ -29,17 +29,6 @@ const Navbar = () => {
       {/* menu */}
       <ul className='hidden md:flex'>
         <li>
-        <Link
-            to='home'
-            smooth={true}
-            duration={500}
-            className={activeLink === 'home' ? 'text-white font-bold' : 'text-gray-300'}
-            onClick={() => handleLinkClick('Reactportfolio')}
-          >
-           My Web
-          </Link>
-          </li>
-          <li>
           <Link
             to='home'
             smooth={true}
